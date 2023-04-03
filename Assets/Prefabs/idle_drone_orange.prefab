@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5205734321400232481}
   - component: {fileID: 5205734321400232482}
   - component: {fileID: 3881720590748685750}
+  - component: {fileID: -7079063891719233724}
   m_Layer: 0
   m_Name: idle_drone_orange
   m_TagString: enemy
@@ -128,3 +129,15 @@ MonoBehaviour:
   spawnTimer: 0
   spawnMax: 5
   spawnMin: 2
+--- !u!114 &-7079063891719233724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5205734321400232487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 096f9871d1fd5b849814af1d6b8a9a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Projectile : MonoBehaviour
 {
     public float moveSpeed;
-    public GameObject explosionPrefab;
+    public GameObject explosionPrefab; 
     private PointManager pointManager;
     public static int enemyCount = 12;
    
@@ -33,7 +33,12 @@ public class Projectile : MonoBehaviour
 
         }
 
-        if (enemyCount ==0)
+        if (collision.gameObject.tag == "Boundary")
+        {
+            Destroy(gameObject);
+        }
+
+        if (enemyCount == 0)
         {
             SceneManager.LoadScene(1);
             ProjectileLvl2.enemyCount = 18;

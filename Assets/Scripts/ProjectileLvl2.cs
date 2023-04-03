@@ -31,6 +31,11 @@ public class ProjectileLvl2 : MonoBehaviour
             enemyCount -= 1;
         }
 
+        if (collision.gameObject.tag == "Boundary")
+        {
+            Destroy(gameObject);
+        }
+
         if (enemyCount == 0)
         {
             SceneManager.LoadScene("WinScreen");
